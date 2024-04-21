@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/stoys/__init__.py
+src/stoys_api.egg-info/PKG-INFO
+src/stoys_api.egg-info/SOURCES.txt
+src/stoys_api.egg-info/dependency_links.txt
+src/stoys_api.egg-info/requires.txt
+src/stoys_api.egg-info/top_level.txt
