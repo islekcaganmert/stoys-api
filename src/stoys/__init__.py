@@ -35,7 +35,7 @@ class STOYS:
         r1 = self.session.get(path(f'/corporate/usersettings/index/id/{self.id}'))
         r2 = self.session.get(path(f'/academic/studentdevelopment/index/id/{self.id}'))
         bs = BeautifulSoup(r1.content.decode(), 'html.parser')
-        d = {'username': self.username}
+        d = {'username': self.username, 'profile_photo': r2.content.decode().split('<img width="85" height="85" src="')[1].split('"')[0]}
         for i in [
             ['tckn', 'TC_KIMLIK_NO'],
             ['name', 'ADI'],
